@@ -9,7 +9,7 @@ This repository aims to create a **long-term updatable NPU benchmark dataset** f
 **ResNet50-v-2-7** and **YOLOv5s**, as benchmark models. The quantization method is **INT8**.
 
 * [ResNet50-v2-7.onnx](https://github.com/onnx/models/blob/main/validated/vision/classification/resnet/model/resnet50-v2-7.onnx)
-* YOLOv5s
+* [YOLOv5su](https://docs.ultralytics.com/models/yolov5/)
 
 For YOLOv5s, because of its post-processing nodes, quantization on most platform SDKs may cause accuracy issues. Here, we **remove the post-processing nodes before model compilation**, and handle post-processing on the **CPU** in the program. For model modification, please refer to [export/export_yolov5s.py](./export/export_yolov5s.py).
 
