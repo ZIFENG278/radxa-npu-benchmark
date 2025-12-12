@@ -1,0 +1,2 @@
+resnet50-v2-7-sim-AX650N.axmodel filter=lfs diff=lfs merge=lfs -text
+yolov5s-sim-AX650.axmodel filter=lfs diff=lfs merge=lfs -text
