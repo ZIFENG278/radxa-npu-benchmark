@@ -37,12 +37,13 @@ python3 export_resnet50.py
 
 ### Performance (FPS)
 
-| Device  | SoC    | DDR Type        | ResNet50-v-2-7 | YOLOv5s |
-|---------|--------|-----------------|----------------|---------|
-| DX-M1   | DX-M1  | LPDDR5 5600 MHz | 1035.92        | 248.39  |
-| DX-M1M  | DX-M1M | LPDDR4 3200 MHz | 543.08         | 236.51  |
-| Rock5B+ | RK3588 | LPDDR4 2400 MHz | 106.864        | 37.584  |
-| AX-M1   | AX-M1  | Unknow          | 578            | 303     |
+| Device    | SoC    | DDR Type        | ResNet50-v-2-7 | YOLOv5s |
+|-----------|--------|-----------------|----------------|---------|
+| DX-M1     | DX-M1  | LPDDR5 5600 MHz | 1035.92        | 248.39  |
+| DX-M1M    | DX-M1M | LPDDR4 3200 MHz | 543.08         | 236.51  |
+| Rock5B+   | RK3588 | LPDDR4 2400 MHz | 106.864        | 37.584  |
+| AX-M1     | AX-M1  | Unknown         | 578            | 303     |
+| Cubie A5E | AX-M1  | Unknown         | 65.18          | 19.45   |
 
 
 ### Bar chart
