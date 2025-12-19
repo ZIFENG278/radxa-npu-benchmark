@@ -7,8 +7,8 @@ from utils import sim_model
 def cut_yolov5s():
 
     input_path = "yolov5su.onnx"
-    output_path = "yolov5s.onnx"
-    output_path_postprocess = "yolov5s-postprocess.onnx"
+    output_path = "yolov5su-cut.onnx"
+    output_path_postprocess = "yolov5su-postprocess.onnx"
 
     input_names = ["images"]
     output_names = ["/model.24/Concat_output_0", "/model.24/Concat_1_output_0", "/model.24/Concat_2_output_0"]
@@ -31,7 +31,7 @@ def ultralytics_export(model_name):
 def export_benchmark_yolov5s():
     ultralytics_export("yolov5s.pt")
     cut_yolov5s()
-    sim_model("yolov5s.onnx")
+    sim_model("yolov5su-cut.onnx")
 
 
 if __name__ == '__main__':
